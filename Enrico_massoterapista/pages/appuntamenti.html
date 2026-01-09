@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prenota Appuntamento | Enrico Massoterapista</title>
+    <meta name="description" content="Prenota un appuntamento per un trattamento di massoterapia a Milano. Scegli tra massaggio terapeutico, sportivo, decontratturante, rilassante o metodo MS.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico">
+</head>
+<body>
+    <!-- Header e Navigazione -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="../index.html" class="logo">
+                    <img src="../assets/images/logo.png" alt="Enrico Massoterapista" class="logo-img">
+                </a>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="../index.html" class="nav-link">Home</a></li>
+                        <li><a href="chi-sono.html" class="nav-link">Chi Sono</a></li>
+                        <li><a href="trattamenti.html" class="nav-link">Trattamenti</a></li>
+                        <li><a href="ms.html" class="nav-link">MS</a></li>
+                        <li><a href="consulenza.html" class="nav-link">Consulenza</a></li>
+                        <li><a href="../index.html#contatti" class="nav-link">Contatti</a></li>
+                        <li><a href="appuntamenti.html" class="nav-link active btn-nav">Prenota</a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero pagina -->
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-hero-title">Prenota un appuntamento</h1>
+            <p class="page-hero-subtitle">Scegli il trattamento, la data e l'orario che preferisci.</p>
+        </div>
+    </section>
+
+    <!-- Contenuto principale -->
+    <main class="page-main">
+        <div class="container">
+            <!-- Introduzione -->
+            <div class="intro-text">
+                <p>Utilizza il modulo sottostante per prenotare una seduta di massoterapia. Riceverai una conferma via email con tutti i dettagli. Per urgenze, puoi chiamare direttamente il <strong>+39 333 123 4567</strong>.</p>
+            </div>
+
+            <!-- Form prenotazione -->
+            <div class="booking-wrapper">
+                <div class="booking-form-container">
+                    <h2 class="form-title">Prenotazione</h2>
+                    <form class="booking-form">
+                        <!-- Step 1: Trattamento -->
+                        <div class="form-step active" id="step1">
+                            <h3 class="step-title">1. Scegli il trattamento</h3>
+                            <div class="treatment-options">
+                                <label class="treatment-option">
+                                    <input type="radio" name="treatment" value="terapeutico" checked>
+                                    <div class="option-card">
+                                        <div class="option-icon">
+                                            <i class="fas fa-hands"></i>
+                                        </div>
+                                        <div class="option-content">
+                                            <h4>Massaggio Terapeutico</h4>
+                                            <p>60 minuti - € 70</p>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="treatment-option">
+                                    <input type="radio" name="treatment" value="sportivo">
+                                    <div class="option-card">
+                                        <div class="option-icon">
+                                            <i class="fas fa-running"></i>
+                                        </div>
+                                        <div class="option-content">
+                                            <h4>Massaggio Sportivo</h4>
+                                            <p>60-90 minuti - € 80</p>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="treatment-option">
+                                    <input type="radio" name="treatment" value="decontratturante">
+                                    <div class="option-card">
+                                        <div class="option-icon">
+                                            <i class="fas fa-spa"></i>
+                                        </div>
+                                        <div class="option-content">
+                                            <h4>Massaggio Decontratturante</h4>
+                                            <p>60 minuti - € 70</p>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="treatment-option">
+                                    <input type="radio" name="treatment" value="rilassante">
+                                    <div class="option-card">
+                                        <div class="option-icon">
+                                            <i class="fas fa-leaf"></i>
+                                        </div>
+                                        <div class="option-content">
+                                            <h4>Massaggio Rilassante</h4>
+                                            <p>60 minuti - € 65</p>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="treatment-option">
+                                    <input type="radio" name="treatment" value="ms">
+                                    <div class="option-card">
+                                        <div class="option-icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="option-content">
+                                            <h4>Metodo MS</h4>
+                                            <p>75 minuti - € 85</p>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="treatment-option">
+                                    <input type="radio" name="treatment" value="consulenza">
+                                    <div class="option-card">
+                                        <div class="option-icon">
+                                            <i class="fas fa-user-md"></i>
+                                        </div>
+                                        <div class="option-content">
+                                            <h4>Consulenza iniziale</h4>
+                                            <p>30 minuti - Gratuita</p>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="step-actions">
+                                <button type="button" class="btn btn-primary next-step" data-next="step2">Continua</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Data e ora -->
+                        <div class="form-step" id="step2">
+                            <h3 class="step-title">2. Scegli data e ora</h3>
+                            <div class="datetime-selector">
+                                <div class="date-selection">
+                                    <label for="booking-date">Data *</label>
+                                    <input type="date" id="booking-date" name="date" required min="2025-01-01">
+                                    <p class="hint">Il calendario mostra solo i giorni disponibili.</p>
+                                </div>
+                                <div class="time-selection">
+                                    <label>Orario *</label>
+                                    <div class="time-slots">
+                                        <label class="time-slot"><input type="radio" name="time" value="09:00"> 09:00</label>
+                                        <label class="time-slot"><input type="radio" name="time" value="10:30"> 10:30</label>
+                                        <label class="time-slot"><input type="radio" name="time" value="12:00"> 12:00</label>
+                                        <label class="time-slot"><input type="radio" name="time" value="14:00"> 14:00</label>
+                                        <label class="time-slot"><input type="radio" name="time" value="15:30"> 15:30</label>
+                                        <label class="time-slot"><input type="radio" name="time" value="17:00"> 17:00</label>
+                                        <label class="time-slot"><input type="radio" name="time" value="18:30"> 18:30</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button type="button" class="btn btn-outline prev-step" data-prev="step1">Indietro</button>
+                                <button type="button" class="btn btn-primary next-step" data-next="step3">Continua</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Dati personali -->
+                        <div class="form-step" id="step3">
+                            <h3 class="step-title">3. I tuoi dati</h3>
+                            <div class="personal-data">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="fullname">Nome e cognome *</label>
+                                        <input type="text" id="fullname" name="fullname" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email">Email *</label>
+                                        <input type="email" id="email" name="email" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="phone">Telefono *</label>
+                                        <input type="tel" id="phone" name="phone" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="location">Dove preferisci il trattamento?</label>
+                                        <select id="location" name="location">
+                                            <option value="studio">Studio (Via Milano 123, Milano)</option>
+                                            <option value="domicilio">Al tuo domicilio (Italia e estero)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="notes">Note aggiuntive (es. allergie, problematiche specifiche, preferenze)</label>
+                                    <textarea id="notes" name="notes" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="step-actions">
+                                <button type="button" class="btn btn-outline prev-step" data-prev="step2">Indietro</button>
+                                <button type="button" class="btn btn-primary next-step" data-next="step4">Continua</button>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Riepilogo e conferma -->
+                        <div class="form-step" id="step4">
+                            <h3 class="step-title">4. Riepilogo</h3>
+                            <div class="summary">
+                                <div class="summary-item">
+                                    <span class="summary-label">Trattamento:</span>
+                                    <span class="summary-value" id="summary-treatment">Massaggio Terapeutico</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Data e ora:</span>
+                                    <span class="summary-value" id="summary-datetime">Da selezionare</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Nome:</span>
+                                    <span class="summary-value" id="summary-name">Da compilare</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Email:</span>
+                                    <span class="summary-value" id="summary-email">Da compilare</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Telefono:</span>
+                                    <span class="summary-value" id="summary-phone">Da compilare</span>
+                                </div>
+                                <div class="summary-item">
+                                    <span class="summary-label">Luogo:</span>
+                                    <span class="summary-value" id="summary-location">Studio</span>
+                                </div>
+                                <div class="summary-item total">
+                                    <span class="summary-label">Totale:</span>
+                                    <span class="summary-value" id="summary-total">€ 70</span>
+                                </div>
+                            </div>
+                            <div class="terms-agreement">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="terms" name="terms" required>
+                                    <span>Accetto i <a href="#">Termini di servizio</a> e l'<a href="#">Informativa sulla privacy</a>. *</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter" name="newsletter">
+                                    <span>Desidero iscrivermi alla newsletter per ricevere consigli sul benessere e promozioni.</span>
+                                </label>
+                            </div>
+                            <div class="step-actions">
+                                <button type="button" class="btn btn-outline prev-step" data-prev="step3">Indietro</button>
+                                <button type="submit" class="btn btn-primary">Conferma prenotazione</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Sidebar info -->
+                <div class="booking-sidebar">
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-title"><i class="fas fa-info-circle"></i> Informazioni utili</h3>
+                        <ul class="sidebar-list">
+                            <li><strong>Orari studio:</strong> Lun-Ven 9:00-19:00, Sab 9:00-13:00</li>
+                            <li><strong>Pagamento:</strong> Contanti, carta di credito, Satispay</li>
+                            <li><strong>Domicilio:</strong> Disponibile per Italia e estero (supplemento)</li>
+                            <li><strong>Cancellazione:</strong> Gratuita fino a 24 ore prima</li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-title"><i class="fas fa-map-marker-alt"></i> Dove sono</h3>
+                        <p>Studio: Via Milano 123, Milano (MM Porta Venezia)</p>
+                        <div class="map-mini">
+                            <!-- Mappa mini placeholder -->
+                            <div class="map-mini-placeholder">
+                                <i class="fas fa-map"></i>
+                                <p>Mappa della posizione</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar-card">
+                        <h3 class="sidebar-title"><i class="fas fa-question-circle"></i> Hai domande?</h3>
+                        <p>Chiama il <strong>+39 333 123 4567</strong> o scrivi a <strong>info@enricomassoterapista.it</strong></p>
+                        <p>Rispondo entro poche ore.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo-footer">
+                        <span class="logo-text">Enrico Massoterapista</span>
+                    </div>
+                    <p class="footer-about">Massoterapia professionale a Milano. Benessere e salute attraverso trattamenti personalizzati.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Link veloci</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="chi-sono.html">Chi Sono</a></li>
+                        <li><a href="trattamenti.html">Trattamenti</a></li>
+                        <li><a href="ms.html">MS</a></li>
+                        <li><a href="consulenza.html">Consulenza</a></li>
+                        <li><a href="appuntamenti.html">Prenota</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Contatti</h3>
+                    <ul class="footer-contacts">
+                        <li><i class="fas fa-phone"></i> +39 333 123 4567</li>
+                        <li><i class="fas fa-envelope"></i> info@enricomassoterapista.it</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Via Milano 123, Milano</li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p>Iscriviti per ricevere consigli sul benessere e promozioni.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="La tua email" required>
+                        <button type="submit" class="btn btn-small">Iscriviti</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Enrico Massoterapista. Tutti i diritti riservati. | <a href="#">Privacy Policy</a> | <a href="#">Termini di servizio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/booking.js"></script>
+</body>
+</html>
