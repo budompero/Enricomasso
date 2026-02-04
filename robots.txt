@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+Sitemap: https://enricomassoterapista.it/sitemap.xml
+Sitemap: https://enricomassoterapista.it/sitemap_index.xml
